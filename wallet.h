@@ -1,3 +1,4 @@
+
 #include <string>
 #include <vector>
 class Wallet {
@@ -12,3 +13,4 @@ public:
     static Wallet* findWalletById(std::vector<Wallet>&, const std::string&);
     static void ensureTotalWallet(std::vector<Wallet>&);
 };
+
