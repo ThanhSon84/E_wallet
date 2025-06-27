@@ -6,14 +6,13 @@
 - Ghi lịch sử giao dịch, tự động sao lưu/phục hồi dữ liệu và các yêu cầu bảo mật khác.
 
 ## Thành viên nhóm
+| Họ tên              | Mã SV         | File đảm nhiệm                                  | Mô tả công việc cụ thể                                                                                                                       |
+|---------------------|---------------|-------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| **Trần Kim Nga**    | K23DTCN608    | utils.h, utils.cpp                              | Xử lý các chức năng tiện ích: băm mật khẩu SHA256, kiểm tra mật khẩu, sinh mật khẩu tự động, sao lưu và phục hồi dữ liệu (backup/restore).    |
+| **Từ Ngọc Thủy**    | K24DTCN565    | wallet.h, wallet.cpp                            | Quản lý ví điểm: tạo ví cho user, ví tổng, lưu/đọc số dư, tìm kiếm ví theo username/ID, đảm bảo tính nhất quán khi chuyển điểm/giao dịch.    |
+| **Lại Văn Thể**     | K24DTCN670    | user.h, user.cpp                                | Quản lý tài khoản: đăng ký, đăng nhập, đổi mật khẩu, kiểm tra trùng số điện thoại, phân quyền, lưu/đọc danh sách user, xử lý mật khẩu tự sinh.|
+| **Hoàng Thanh Sơn** | K24DTCN419    | transaction.h, transaction.cpp;<br>otp.h, otp.cpp;<br>ipc.h, ipc.cpp;<br>main.cpp; otp_confirm.cpp | Xử lý giao dịch chuyển điểm, ghi và hiển thị lịch sử giao dịch;<br>sinh và xác thực OTP;<br>giao tiếp xác thực OTP qua pipe;<br>xây dựng menu chính, điều phối toàn bộ chương trình, xử lý logic phân quyền, tích hợp các module. |
 
-| Họ tên              | Mã SV      | File đảm nhiệm                                  | Mô tả công việc cụ thể                                                                                                                       |
-|---------------------|------------|-------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| **Trần Kim Nga**    | K23DTCN608 | utils.h, utils.cpp                              | Xử lý các chức năng tiện ích: băm mật khẩu SHA256, kiểm tra mật khẩu, sinh mật khẩu tự động, sao lưu và phục hồi dữ liệu (backup/restore).   |
-| **Từ Ngọc Thủy**    | K24DTCN565 | wallet.h, wallet.cpp                            | Quản lý ví điểm: tạo ví cho user, ví tổng, lưu/đọc số dư, tìm kiếm ví theo username/ID, đảm bảo tính nhất quán khi chuyển điểm/giao dịch.    |
-| **Lại Văn Thể**     | K24DTCN670 | user.h, user.cpp                                | Quản lý tài khoản: đăng ký, đăng nhập, đổi mật khẩu, kiểm tra trùng số điện thoại, phân quyền, lưu/đọc danh sách user, xử lý mật khẩu tự sinh|
-| **Hoàng Thanh Sơn** | K24DTCN419 | transaction.h, transaction.cpp; otp.h, otp.cpp; | Xử lý giao dịch chuyển điểm, ghi và hiển thị lịch sử giao dịch; sinh và xác thực OTP; giao tiếp xác thực OTP qua pipe; xây dựng menu chính,  |
-|                     |            | ipc.h, ipc.cpp; main.cpp; otp_confirm.cpp       | điều phối toàn bộ chương trình, xử lý logic phân quyền, tích hợp các module.                                                                 |
 
 ## Đặc tả chức năng
 - Đăng ký/đăng nhập/đổi mật khẩu
